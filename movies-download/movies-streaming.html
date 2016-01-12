@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html itemscope itemtype="http://schema.org/WebPage">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta content="./images/favicon.png" itemprop="image">
+  <meta content="Convertir, video, gratis, gratuito, YouTube, MP3, AAC, WMA, M4A, OGG, MP4, 3GP, AVI, MPG, WMV , FLV " name="keywords">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">  
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+	<link rel="shortcut icon" href="images/favicon.ico">
+  <title>Movies-streaming</title>
+</head>
+
+<body>
+
+<div class="header">
+<div class="header-wrapper"></div>
+</div>
+
+<div class="container">
+  <div class="background-wrapper">    
+  </div>
+  <div class="player-wrapper"> 
+    <div id="id-preloader" class="preloader"></div>
+    <div id="id-tel-form" class="tel-form">
+      <form class="form">   
+      <div class="step1">
+      <p>Hemos detectado que es la primera vez que nos visitas, crea tu cuenta ahora. Es muy fácil, sólo tendrás que hacerlo una vez.
+      Escribe aquí tu número de móvil para que podamos verificar que eres de España, te enviaremos un código pin para poder verfificar que se trata de tu número móvil:</p>
+      <input class="intro-num" type="tel" value=""  name="phone" maxlength="9" size="25"  onkeyup="" autofocus>
+      </div>
+      <div class="step2">
+      <input type="submit" class="botonEnviar" name="enviar" value="Continuar">
+      </div>
+      </form>
+    </div> 
+  </div>
+  <div class="legal">
+    <p>Servicio de suscripción para mayores de 18 años con el que podrás ver películas online desde cualquier dispositivo: ordenador, tablet o smartphone. Cada semana recibirás créditos que podrás gastar en tuspelis.co, donde encontrarás un amplio catálogo de películas a tu disposición. Los contenidos son solo compatibles con dispositivos que soporten tecnología WAP. Servicio actualmente no disponible para Movistar. Coste de suscripción para el resto de operadores 1,45€ (uno con cuarenta y cinco euros) por sms recibido más coste de navegación WAP (consulte con su operador), Max. 25 sms por mes. Para cancelar, envía baja al . Servicio reservado para el titular de la línea telefónica. Darse de alta al servicio, la introducción del código personal (PIN) significa la aceptación expresa del servicio y de sus bases. Operador titular del número , con CIF Nº , Nº atn. cliente: , E-mail: Fax: +33. C/ , CP:. Términos y condiciones generales en </p>
+  </div>
+</div>
+
+
+<div class="alert-cookies">
+<div class="cookies-wrapper">
+Al utilizar nuestros servicios, aceptas el uso que hacemos de las cookies. <a href="#">Más información</a>	
+<input type="button" value="OK">
+</div>
+</div>
+
+<div class="footer">          
+        <div class="footer_side1_wrapper">                     
+                <div><a target="_blank" rel="nofollow" href="">Términos y condiciones</a></div>
+                <span class="footer_sep">|</span>
+                <div><a target="_blank" rel="nofollow" href="">Política de privacidad</a></div>                             
+                <span class="footer_sep">|</span>
+                <div><a rel="nofollow" href="">Condiciones del servicio</a></div> 
+                <span class="footer_sep">|</span>
+                <div><a rel="nofollow" href="">¿Quines somos?</a></div> 
+                <span class="footer_sep">|</span>
+                <div><a rel="nofollow" href="">Contacto</a></div> 
+                <span class="footer_sep">|</span>
+                <div>© 2014 Buscador.com</div> 
+			  </div>
+</div>
+  
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+
+<script type="text/javascript">
+
+  $(document).ready(function(){ 
+
+//Función para impedir la introducción de texto en formulario 
+function Solo_Numerico(variable){
+        Numer=parseInt(variable);
+        if (isNaN(Numer)){
+            return "";
+        }
+        return Numer;
+    }
+    function ValNumero(Control){
+        Control.value=Solo_Numerico(Control.value);
+    }
+//
+
+// Función para controlar el envío de 9 números en el formulario 
+function verificarNum()
+{
+  var controlNum = document.getElementById('formulario').phone.value; 
+  if ((controlNum <= "600000000") || (controlNum >= "800000000")){
+    alert("Debes introducir un número de teléfono válido para continuar");
+    return false;
+  }
+  else{
+  document.getElementById('formulario').submit();
+  }
+}
+//
+
+     setInterval(function() {
+      element = document.getElementById("id-tel-form").style.display="block";
+      element = document.getElementById("id-preloader").style.display="none";
+    }, 2000);
+
+
+
+  
+
+
+ }); 
+
+</script>
+</body>
+</html>

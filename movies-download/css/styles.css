@@ -1,0 +1,227 @@
+﻿/* Reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font: inherit;
+	vertical-align: baseline;
+}
+strong { font-weight: bold; }
+b{  font-weight: bold;  }
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+/* remember to highlight inserts somehow! */
+ins {
+	text-decoration: none;
+}
+del {
+	text-decoration: line-through;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*/// Reset Over ///*/
+body {
+background: #000;
+color: #222;
+font-family: Arial, Helvetica, sans-serif;
+}
+a{
+    text-decoration: none;
+    color:#083aa2;
+}
+a:hover{
+text-decoration: underline;
+}
+
+    .header{
+    width: 100%;
+    background-color: #404040;
+    height: 56px;
+    }
+    .header-wrapper{
+    width: 1280px;
+    height: 56px;
+    margin: 0 auto;
+    background-image: url('../images/header.png');
+    background-repeat: no-repeat;
+    }
+    .container {  
+    width: 1280px;  
+    margin: 0 auto;
+    } 
+    .background-wrapper{
+    width: 1280px;
+    height: 598px;
+    background-image: url('../images/player_background.jpg');
+    }
+    .player-wrapper{
+    width: 1280px;
+    height: 84px;
+    background-image: url('../images/player.png');
+    background-repeat: no-repeat;
+    margin-bottom: 7px;
+    }
+    .preloader, .tel-form{
+    background: url('../images/agif-loading.gif') no-repeat scroll center top rgba(0, 0, 0, 0);
+    height: 316px;
+    left: 50%;
+    margin-left: -322px;
+    position: absolute;
+    top: 150px;
+    width: 635px;
+    z-index: 22;
+    }
+    .tel-form{
+    background: url('../images/intro-num.gif') no-repeat scroll center top rgba(0, 0, 0, 0);
+    }
+    .form{
+    color: white;
+    margin:60px 60px 0px 220px;
+    }
+    .step1 p{
+    line-height: 1.4em;
+    font-size: 0.9em;
+    margin-bottom: 18px;
+    }   
+    .intro-num{
+    padding-left: 7px;
+    float: left;
+    margin-bottom: 18px;
+    height: 27px;
+    margin-right:14px; 
+    border-radius: 4px;
+    }
+    .intro-num:focus{
+    box-shadow: inset 0 0 7px #3684e5;    
+    }
+    .botonEnviar{
+    border-radius: 4px;
+    font-size: 1.2em;
+    color: black;
+    background-color:#f78000;
+    border:none; 
+    height: 33px; 
+    cursor: pointer;   
+    }
+    .botonEnviar:hover{
+    background-color: #ae5b03;
+    }
+    .legal{
+        color: #454545;
+        font-size: 0.7em;
+        margin-bottom: 72px;
+    }
+    #id-tel-form{display: none;}
+    /* FOOTER */
+
+    .alert-cookies {
+    background: none repeat scroll 0 0 #fff;
+    bottom: 5px;
+    left: 0;
+    padding: 4px 0px;
+    width: 100%;
+    z-index: 10;
+    }
+    .footer{  
+    color: grey;
+    padding: 0px 0px;
+    margin:14px;
+    height: 21px; 
+    } 
+    .alert-cookies {
+    background-color:#f6f6d3;  
+    border-top: 0px;    
+    text-align: right;
+    z-index: 11;
+    }
+    .cookies-wrapper{
+    width: 1280px;
+    margin: 0 auto; 
+    }
+   .cookies-wrapper input[type="button"]:hover{
+    cursor: pointer;
+   }
+    .footer div, .alert-cookies {
+    display: inline-block;
+    font-size: 11px;
+    line-height: 1.6em; 
+    }
+    .footer_side1_wrapper {
+    width: 1280px;
+    margin: 0 auto;
+    float: right;
+    }
+
+.alert-cookies a:link, .alert-cookies a:visited{
+ color: #454545;
+   
+}
+.footer a:link, .footer a:visited {
+    color: white;
+    display: inline-block;
+    font-family: Arial;
+    font-size: 11px;
+    padding: 0 5px;
+    text-decoration: none;
+}
+
+@media only screen and  (min-width: 1200px){
+.container {
+ width: 1280px;  
+max-width: 1280px;
+}
+}
+
+@media only screen and (max-width:1024px) {
+.cloud-icon, .banner-sky{
+    display: none;
+}
+
+.bs-docs-header h1, .bs-docs-header h2 {
+    margin: 14px 0px;
+}
+}
+
+
+/* //////////////////////////////////////////////////////////////////////// */
+
+
+
+
+
+
+
+
+
